@@ -15,7 +15,6 @@ const CompleteProfile = () => {
         email,
         name,
       });
-      console.log(data)
       // Save token and user data in local storage or state
       localStorage.setItem('token', data.token);
 

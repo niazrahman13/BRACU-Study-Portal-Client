@@ -26,7 +26,6 @@ const Register = () => {
         "https://bracu-study-portal.onrender.com/api/v1/register",
         values
       );
-      console.log(data);
       // Save token and user data in local storage or state
       localStorage.setItem("token", data.token);
 

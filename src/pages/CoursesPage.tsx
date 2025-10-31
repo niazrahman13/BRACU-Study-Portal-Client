@@ -16,7 +16,6 @@ const CoursesPage = () => {
         const response = await axios.get(
           "https://bracu-study-portal.onrender.com/api/v1/getCourseData"
         );
-        console.log(response.data);
         setCourses(response.data); // Set the fetched data to state
         setLoading(false); // Set loading to false after data is fetched
       } catch (error) {

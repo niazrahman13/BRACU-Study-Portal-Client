@@ -167,7 +167,6 @@ const Forum: React.FC = () => {
           message.success("Issue resolved");
           fetchIssues(); // Refresh issues after resolving
         } catch (error) {
-          console.log(issueId);
           message.error("Failed to resolve issue");
         }
       },

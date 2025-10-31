@@ -14,14 +14,12 @@ const Playlist = () => {
 
   // Decode the playlist URL from the parameters
   const decodedUrl = decodeURIComponent(playlistUrl || "");
-  console.log("Decoded URL:", decodedUrl);
 
   // Extract the playlist ID from the decoded URL
   let playlistId;
   try {
     const youtubeUrl = new URL(decodedUrl);
     playlistId = youtubeUrl.searchParams.get("list");
-    console.log("Playlist ID:", playlistId);
   } catch (error) {
     console.error("Invalid URL:", decodedUrl);
     return <div>Invalid Playlist URL</div>;

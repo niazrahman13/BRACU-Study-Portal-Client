@@ -1,13 +1,13 @@
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import {
-    Button,
-    Col,
-    Input,
-    List,
-    message,
-    Row,
-    Select,
-    Typography,
+  Button,
+  Col,
+  Input,
+  List,
+  message,
+  Row,
+  Select,
+  Typography,
 } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
@@ -98,7 +98,6 @@ const TodoList: React.FC = () => {
   };
 
   const handleEdit = async (id: string) => {
-    console.log(todos);
     const todoToEdit = todos.find((todo) => todo._id === id);
     if (todoToEdit) {
       const newText = prompt("Edit task", todoToEdit.text) || todoToEdit.text;

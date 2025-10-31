@@ -39,7 +39,6 @@ const Login = () => {
       );
 
       const { token, user } = response.data;
-      console.log(token);
       const decodedToken = jwtDecode(response.data.token);
 
       dispatch(
